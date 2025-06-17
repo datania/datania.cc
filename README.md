@@ -1,2 +1,3 @@
-# datania.cc
-🕸️ Web de Datania
+# datania.cc 🕸️
+
+Web de Datania.

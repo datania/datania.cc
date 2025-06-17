@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATANIA - Datos sin complicaciones</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #000000;
+            --link: #0066cc;
+            --border: #e0e0e0;
+            --badge-bg: #f0f0f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            text-align: center;
+            letter-spacing: 0.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .slogan {
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.15rem;
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: var(--link);
+            text-decoration: none;
+            border-bottom: 1px solid var(--link);
+        }
+
+        a:hover {
+            opacity: 0.7;
+        }
+
+
+        .main-description {
+            text-align: center;
+            font-size: 1.1rem;
+            margin: 2rem 0;
+        }
+
+        .cta {
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #FFD21E;
+            color: #000000;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-weight: 700;
+            text-decoration: none;
+            border: none;
+            transition: transform 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            opacity: 1;
+        }
+
+        ul {
+            list-style: none;
+            margin-bottom: 1rem;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        ul li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+        }
+
+        code {
+            background-color: var(--badge-bg);
+            padding: 0.1rem 0.3rem;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5rem;
+                letter-spacing: 0.1rem;
+            }
+
+            body {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>D A T A N I A</h1>
+    <p class="slogan">Datos, sin complicaciones</p>
+
+    <p class="main-description">
+        Datania es una plataforma de datos abiertos colaborativa con el objetivo de unificar
+        y armonizar información de diversas fuentes a nivel de España.
+    </p>
+
+    <div class="cta">
+        <a href="https://huggingface.co/datania" class="cta-button">
+            🤗 Acceder a los datos en Hugging Face
+        </a>
+    </div>
+
+    <h2>📋 Recursos</h2>
+    <p>Aquí tienes algunos recursos que te pueden ser de utilidad relacionados con datos abiertos y transparencia a
+        nivel de España.</p>
+
+    <ul>
+        <li><a href="https://www.ine.es/">INE</a></li>
+        <li><a href="https://datos.gob.es/">Datos Abiertos de España</a> (y en <a
+                href="https://github.com/datosgobes">GitHub</a>)</li>
+        <li><a href="https://datos.gob.es/es/acerca-de-la-iniciativa-aporta">Iniciativa Aporta</a></li>
+        <li><a href="https://nap.dgt.es/dataset">DGT</a>. También en <a href="https://infocar.dgt.es/etraffic/">mapa</a>
+        </li>
+        <li><a href="https://opendata.aemet.es/centrodedescargas/inicio">AEMET</a></li>
+        <li><a href="https://www.wikidata.org/">WikiData</a></li>
+        <li><a href="https://opendata.esri.es/search?collection=Dataset">ESRI</a></li>
+        <li><a href="https://www.datadista.com/">Datadista</a></li>
+        <li><a href="https://transparentia.newtral.es/buscador">Newtral</a></li>
+        <li><a href="https://github.com/rOpenSpain/spanishoddata">Spanish Origin Destination Data</a></li>
+        <li><a href="https://github.com/Data-Market">DataMarket</a></li>
+        <li><a href="https://ec.europa.eu/eurostat/data/database">Eurostat</a>. Existe una librería en <a
+                href="https://github.com/rOpenGov/eurostat">R</a></li>
+        <li><a href="https://www.gobierto.es/">Gobierto</a></li>
+        <li><a href="https://github.com/vulturno">Vulturno</a></li>
+    </ul>
+
+    <h2>💡 Principios</h2>
+
+    <ul>
+        <li><strong>Transparencia</strong>: Código, estándares, infraestructura, y datos, son públicos. Usa
+            herramientas, estándares e infraestructuras abiertas, y comparte datos en <a
+                href="https://voltrondata.com/codex/a-new-frontier">formatos accesibles</a>.</li>
+        <li><strong>Modularidad</strong>: Cada componente o dataset puede ser reemplazado, extendido o eliminado. El
+            código funciona bien en muchos entornos (un portátil, un clúster, o desde el navegador) y puede desplegarse
+            en distintos lugares.</li>
+        <li><strong>Sin Rozamiento</strong>: No preguntes, haz un fork y mejora el código, los modelos, o añade una
+            nueva fuente de datos. Usa los datasets sin límites de API o cuotas.</li>
+        <li><strong>Datos como Código</strong>: Transformaciones declarativas trackeadas en <code>git</code>. Los
+            datasets y sus transformaciones se publican para que otras personas puedan construir sobre ellos.</li>
+        <li><strong>Pegamento</strong>: Datania es un puente entre herramientas y enfoques y no un estándar o una
+            herramienta en sí misma. Se integra con otras herramientas y servicios.</li>
+    </ul>
+
+    <footer>
+        <p>
+            <a href="https://github.com/datania/">GitHub</a> ·
+            Creado por <a href="https://davidgasquez.com">David Gasquez</a>
+        </p>
+    </footer>
+</body>
+
+</html>
