@@ -10,5 +10,11 @@
   "preview_urls": true,
   "observability": {
     "enabled": true
-  }
+  },
+  "routes": [
+    {
+      "pattern": "datania.cc",
+      "custom_domain": true
+    }
+  ]
 }
