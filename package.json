@@ -1,0 +1,13 @@
+{
+	"name": "datania-static",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy --config wrangler.jsonc",
+		"preview": "wrangler dev --config wrangler.jsonc --local",
+		"dev": "npm run preview"
+	},
+	"devDependencies": {
+		"wrangler": "^4.38.0"
+	}
+}
