@@ -8,6 +8,6 @@
 		"dev": "npm run preview"
 	},
 	"devDependencies": {
-		"wrangler": "^4.38.0"
+		"wrangler": "^4.51.0"
 	}
 }
